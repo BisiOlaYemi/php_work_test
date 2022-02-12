@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="receive.php" method="post">
+        <div class="rn-icon-input">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" name="pickup" placeholder="Pickup Location">
+        </div>
+        <div class="rn-icon-input">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" name="dropoff" placeholder="Dropoff Location">
+        </div>
+        <div class="rn-icon-input">
+            <i class="fas fa-male"></i>
+            <input type="text" name="fullname" placeholder="Full Name">
+        </div>
+        <div class="rn-icon-input">
+            <i class="fas fa-phone"></i>
+            <input type="text" name="phone" placeholder="Phone Number">
+        </div>
+        <div class="rn-icon-input">
+            <i class="fas fa-envelope-open"></i>
+            <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="rn-icon-input">
+            <select id="cars" name="cars">
+                <option value="Short Trip">Short trip</option>
+                <option value="Aiport Pickup">Airport Pick-up</option>
+                <option value="Interstate">Interstate</option>
+                <option value="Train Station">Train Station</option>
+                <option value="Fullday">Full Day</option>
+                <option value="Custom">Custom</option>
+              </select>
+        </div>
+        <div class="rn-icon-input">
+            <select id="cars" name="vehicletype">
+                <option value="Basic">Basic</option>
+                <option value="Posh">Posh</option>
+                <option value="Stalwart">Stalwart</option>
+                <option value="Custom">Custom</option>
+              </select>
+        </div>
+        <div class="rn-date-time-input">
+            <div class="row">
+                <div class="col-7">
+                    <div class="rn-icon-input">
+                        <i class="far fa-calendar-alt"></i>
+                        <input type="text" name="pickupdate" placeholder="Pickup Date" id="pickup-date">
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="rn-icon-input">
+                        <i class="far fa-clock"></i>
+                        <input type="text" name="time" placeholder="Time" id="pickup-time">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rn-date-time-input">
+            <div class="row">
+                <div class="col-7">
+                    <div class="rn-icon-input">
+                        <i class="far fa-calendar-alt"></i>
+                        <input type="text" name="dropoffdate" placeholder="Dropoff Date" id="dropoff-date">
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="rn-icon-input">
+                        <i class="far fa-clock"></i>
+                        <input type="text" name="timeset" placeholder="Time" id="dropoff-time">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-main btn-lg btn-shadow btn-block" type="submit">
+             Complete Booking
+        </button>
+    </form>
+</body>
+</html>
